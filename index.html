@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LWM - Learn With Me | 100% Offline Local AI Engine</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-link">
+        <div class="logo-glow-box">
+          <img src="logo.svg" alt="LWM Logo">
+        </div>
+        <span class="brand-title">LWM</span>
+      </a>
+      <ul class="cyber-nav">
+        <li><a href="#features">Capabilities</a></li>
+        <li><a href="#models">Model Hub</a></li>
+        <li><a href="#author">Author</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+      </ul>
+      <a href="https://github.com/kni1514/LWM/releases/download/v1.0.0/LWM_Setup_v1.0.0.exe" class="btn-cyber">
+        <span>Get Installer</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="neo-pill">
+        <span>✦ 100% Offline Private GGUF AI Engine</span>
+      </div>
+
+      <h1 class="hero-heading">Learn With Me (LWM)<br><span class="highlight">Private Local AI Workspace</span></h1>
+      <p class="hero-subtext">High-performance offline AI workspace executing Large Language Models locally with native C++ speed, 3D fluid voice mode, and real-time Hugging Face model auto-configuration.</p>
+
+      <div class="cyber-terminal">
+        <div class="term-topbar">
+          <div class="term-btn t-red"></div>
+          <div class="term-btn t-yellow"></div>
+          <div class="term-btn t-green"></div>
+          <span class="term-title">1-Click Terminal Direct Run</span>
+        </div>
+        <div class="term-content">
+          <code class="cmd-code" id="cmd-text">curl https://kni1514.github.io/app/lwm.exe > lwm.exe && lwm</code>
+          <button class="btn-copy-cyber" id="copy-btn" onclick="copyCmd()">Copy Command</button>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 20px; justify-content: center;">
+        <a href="https://kni1514.github.io/app/lwm.exe" class="btn-cyber" style="font-size: 18px; padding: 18px 44px;">
+          <span>Download LWM.exe</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="features">
+    <div class="bento-grid">
+      <div class="bento-card bento-wide">
+        <div class="bento-icon">🔒</div>
+        <h3 class="bento-heading">100% Offline Client Privacy</h3>
+        <p class="bento-text">All prompts, outputs, and model weights process strictly on client hardware. Zero cloud transmissions, zero API keys, zero tracking, and 100% data sovereignty guaranteed.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon">⚡</div>
+        <h3 class="bento-heading">46+ Tokens/Sec</h3>
+        <p class="bento-text">Direct FFI bindings and process streaming via llama.dll and llama-cli delivering ultra-fast token generation on local hardware.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon">🤗</div>
+        <h3 class="bento-heading">Hugging Face Hub Live</h3>
+        <p class="bento-text">Discover and download any GGUF repository directly from Hugging Face Hub with 1-click automatic model registration.</p>
+      </div>
+
+      <div class="bento-card bento-wide">
+        <div class="bento-icon">🎙️</div>
+        <h3 class="bento-heading">3D Fluid Voice Orb & Dictation</h3>
+        <p class="bento-text">Interactive 3D glowing voice sphere rendering dynamic audio specular reflections with local speech-to-text dictation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="models">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <h2 style="font-size: 42px; font-weight: 700; letter-spacing: -1px; margin-bottom: 12px;">Top Curated GGUF Model Suite</h2>
+      <p style="color: var(--text-secondary); font-size: 18px;">Pre-configured open-weights models for high-speed offline inference under 10 GB.</p>
+    </div>
+
+    <div class="bento-grid">
+      <div class="bento-card">
+        <div class="bento-icon" style="color: #ffa502;">#1</div>
+        <h3 class="bento-heading">Phi-4-mini 3.8B Instruct</h3>
+        <p class="bento-text">Microsoft SOTA model for mathematical logic, complex problem solving, and analytical reasoning.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon" style="color: #ffa502;">#2</div>
+        <h3 class="bento-heading">Llama 3.1 8B Instruct</h3>
+        <p class="bento-text">Meta's flagship open model for synthesis, instruction execution, and deep context processing.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon" style="color: #ffa502;">#3</div>
+        <h3 class="bento-heading">Mistral 7B Instruct v0.3</h3>
+        <p class="bento-text">Fast, efficient European open weights LLM for creative writing and rapid dialogue.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon">#4</div>
+        <h3 class="bento-heading">Gemma 2 9B Instruct</h3>
+        <p class="bento-text">Google DeepMind high performance open model with sliding window attention.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon">#5</div>
+        <h3 class="bento-heading">Hermes 3 Llama 3.1 8B</h3>
+        <p class="bento-text">Advanced agentic model with structured JSON calling, roleplay, and multi-turn logic.</p>
+      </div>
+
+      <div class="bento-card">
+        <div class="bento-icon">#6</div>
+        <h3 class="bento-heading">DeepSeek Coder 6.7B</h3>
+        <p class="bento-text">Specialist offline code generation, refactoring, unit test writing, and debugging LLM.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="author">
+    <div class="author-cyber-card">
+      <div class="author-img-wrap">
+        <img src="logo.svg" alt="LWM Logo">
+      </div>
+      <div>
+        <h3 class="author-name">Niranjan Kumar K</h3>
+        <div class="author-tagline">Creator & Lead Architect • KNI-ORG</div>
+        <p class="author-bio">Architect of KNI OS and creator of the K Programming Language. Specialized in native system software, client-side AI compilers, and ultra-private offline execution engines.</p>
+        <div class="contacts-row">
+          <a href="mailto:hackerenvironment1514@gmail.com" class="contact-button">
+            <span>📧 hackerenvironment1514@gmail.com</span>
+          </a>
+          <a href="https://wa.me/919515888385" class="contact-button">
+            <span>💬 +91 9515888385</span>
+          </a>
+          <a href="https://kni1514.github.io/app/" class="contact-button">
+            <span>🌐 Official Website</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="architecture" style="margin-bottom: 100px;">
+    <div class="bento-card" style="padding: 56px;">
+      <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 16px; color: #fff;">System Architecture & Runtime Stack</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 32px; font-size: 17px;">LWM integrates dual-strategy native C++ execution, path provider auto-discovery across user document sandboxes, dynamic prompt formatting (ChatML, Llama-3, Phi-4, Gemma), and embedded SQLite thread persistence.</p>
+      <div style="background: #020205; border: 1px solid var(--border-cyber); border-radius: 16px; padding: 24px; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: var(--neon-green);">
+        UI Layer (Flutter Dart) ──► Provider State ──► Native AI Engine (llama-cli / llama.dll FFI) ──► Local GGUF Weights
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 14px;">
+      <img src="logo.svg" alt="LWM Logo" style="width: 28px; height: 28px;">
+      <p>© 2026 LWM (Learn With Me). Built with excellence by Niranjan Kumar K (KNI-ORG). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
