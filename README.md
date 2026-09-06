@@ -9,7 +9,7 @@
 Open Terminal or Command Prompt and run:
 
 ```bash
-curl https://kni1514.github.io/app/lwm.exe > lwm.exe && lwm
+curl https://kni1514.github.io/app/LWM.exe > LWM.exe && LWM
 ```
 
 ---
